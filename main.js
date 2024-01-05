@@ -1,4 +1,4 @@
-// Función para generar un número aleatorio entre 1 y 10
+// Función para generar un número aleatorio entre 1 y 50
 function generarNumeroAleatorio() {
     return Math.floor(Math.random() * 10) + 1;
 }
@@ -9,7 +9,7 @@ function iniciarJuego() {
     let intentos = 0;
 
     while (true) {
-        const intento = parseInt(prompt("Intenta adivinar el número (entre 1 y 10):"));
+        const intento = parseInt(prompt("Intenta adivinar el número (entre 1 y 50):"));
 
         if (isNaN(intento)) {
             alert("Ingresa un número válido.");
